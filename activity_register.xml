@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/books"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7">
+    </View>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:textColorHint="#fafafa"
+            android:textColor="#fafafa"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="@color/design_default_color_on_primary"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="#fafafa"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="#fafafa"
+            android:textColor="#fafafa"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            app:met_baseColor="@color/design_default_color_on_primary"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="#fafafa"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="#fafafa"
+            android:textColor="#fafafa"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            app:met_baseColor="#fafafa"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#fafafa"
+            app:met_singleLineEllipsis="true"/>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_weight="1"
+            android:shadowColor="@color/design_default_color_background"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/create_account"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</RelativeLayout>
